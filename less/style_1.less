@@ -1,0 +1,56 @@
+.square{
+	width: 80px;
+	height: 150px;
+	position: relative;
+	background: black;
+	margin: 15px 0 0 15px;
+	padding: 5px 0;
+}
+.red{
+	width: 40px;
+	height: 40px;
+	background:grey;
+	border-radius: 40px;
+	margin: 0px auto 10px auto;
+	animation: red1 11.5s linear 0s 10 normal;
+}
+.yellow{
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background:grey;
+	margin: 0px auto 10px auto;
+	animation: yellow1 11.5s linear 0s 10 normal;
+}
+.green{
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background:grey;
+	margin: 0 auto;
+	animation: green1 11.5s linear 0s 10 normal;
+}
+@keyframes red1{
+	from{background: grey;}
+	1%{background: red;}
+	34%{background: red;}
+	34.7826086956%{background: red;}
+	34.7826086957%{background: grey;}
+	to{background: grey;}
+}
+@keyframes yellow1{
+	from{background: grey;}
+	34.7826086956%{background: grey;}
+	35.7826086956%{background: yellow;}
+	55.5217391305%{background: yellow;}
+	56.5217391305%{background: grey;}
+	to{background: grey;}
+}
+@keyframes green1{
+	from{background: grey;}
+	56.5217391305%{background: grey;}
+	57.5217391305%{background: green;}
+	94%{background: green;}
+	95%{background: grey;}
+	to{background: grey;}
+}
